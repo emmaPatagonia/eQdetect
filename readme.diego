@@ -1,0 +1,38 @@
+
+Antes de correr cualquier script, considerar lo siguiente:
+
+1) Tener instalado matplotlib3, numpy, scipy y obspy en python 3.7 u 3.8
+2) Agregar al ~/.bashrc las siguientes lineas al final:
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
+export PATH=path-to-folder/ANN/hypo71:$PATH 
+
+Luego cerrar y abrir una nueva terminal (o correr el comando "source ~/.bashrc")
+
+3) En la carpera src encontraras:
+msfiles: los datos sismicos en miniseed ( hasta ahora solo los de sep-oct 2019)
+
+dataless: metadata para hacer la conversion de cuentas digitales a velocidad (no usado para detectar automaticamente los eventos)
+
+model.cru: modelo de velocidad para la zona
+
+stations.net: informacion de localizacion de las estaciones sismicas
+
+catalogo.txt: catalogo sismico con el cual puedes comparar tus resultados
+
+4) En la carpeta principal encontraras lo siguiente:
+run-autodetect.py: script principal, se pueden modificar todos los parametros para el picking desde el mismo script. 
+Sugiero un skype para explicarte bien el paso a paso de la deteccion. 
+No modificar nada si no sabes bien que hace cada parametro.
+
+sripts.py: funciones utilizadas por el script principal. 
+No deberia ser necesario modificar algo.
+
+hypo71: todas las librerias necesarias para correr hypo71 desde el script principal. 
+En caso de ser necesario hay que darles permisos de ejecucion al archivo hypo71pc.
+Desde la carpeta hypo71 tipia:
+chmod a+x hypo71pc
+
+
+5) prueba lanzando el script principal: python run-autodetect.py   ... deberia darte en pantalla informacion ... cuentame como te va...
+
