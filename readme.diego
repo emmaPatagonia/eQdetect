@@ -1,3 +1,8 @@
+#############################################################
+Rutinas para detectar un evento sísmico (local/regional) 
+usando el metodo sta/lta (ajustado para fases P y S) y hypo71.
+Consultas a: diegogonzalezv@udec.cl
+#############################################################
 
 Antes de correr cualquier script, considerar lo siguiente:
 
@@ -5,7 +10,7 @@ Antes de correr cualquier script, considerar lo siguiente:
 2) Agregar al ~/.bashrc las siguientes lineas al final:
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.
-export PATH=path-to-folder/ANN/hypo71:$PATH 
+export PATH=path-to-folder/eQdetect/hypo71:$PATH 
 
 Luego cerrar y abrir una nueva terminal (o correr el comando "source ~/.bashrc")
 
@@ -32,7 +37,6 @@ hypo71: todas las librerias necesarias para correr hypo71 desde el script princi
 En caso de ser necesario hay que darles permisos de ejecucion al archivo hypo71pc.
 Desde la carpeta hypo71 tipia:
 chmod a+x hypo71pc
-
 
 5) prueba lanzando el script principal: python run-autodetect.py   ... deberia darte en pantalla informacion ... cuentame como te va...
 
