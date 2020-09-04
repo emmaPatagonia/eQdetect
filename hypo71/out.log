@@ -1,0 +1,28 @@
+
+
+
+ **** RUNNING HYPO71PC (Version 1: 11/29/85) **** 
+
+
+ Enter FILENAME for HYPO71PC input data (CR = HYPO71PC.INP)?
+
+
+ Enter FILENAME for HYPO71PC printed output (CR = HYPO71PC.PRT)?
+
+
+ Enter FILENAME for HYPO71PC punched output (CR = HYPO71PC.PUN)?
+
+
+
+ Input date file   --> hypo71.inp    
+ Output print file --> hypo71.prt    
+ Output punch file --> hypo71.pun    
+
+
+ ... Setting up station list, crustal model, & control card
+
+
+ ... Locating earthquake on 19/ 9/30  19:21
+
+  DATE    ORIGIN    LAT S    LONG W    DEPTH    MAG NO GAP DMIN  RMS  ERH  ERZ QM
+ 190930 1920 20.15 38-30.57  66-31.36   0.07         5 358417.9 0.40********** D1
